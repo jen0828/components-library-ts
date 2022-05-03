@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react'
+import React, { HTMLAttributes, ReactNode } from 'react'
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLButtonElement>{
   children: ReactNode;
   variant: 'primary' | 'secondary';
 }
