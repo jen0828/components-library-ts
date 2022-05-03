@@ -10,3 +10,5 @@ const meta: Meta ={
 export default meta;
 
 export const Default = () => <Button variant='primary'>CLICK ME</Button>
+
+export const Secondary = () => <Button variant='secondary'>I am button</Button>
