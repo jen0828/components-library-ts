@@ -8,3 +8,5 @@ const meta: Meta ={
 }
 
 export default meta;
+
+export const Default = () => <Button variant='primary'>CLICK ME</Button>
