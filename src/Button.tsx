@@ -7,7 +7,9 @@ export interface Props extends HTMLAttributes<HTMLButtonElement>{
 
 export const Button = ({children, variant, ...props}: Props) => {
   return (
-    <button {...props} style={{backgroundColor: variant === 'primary' ? 'blue' : 'grey'}}>
+    <button {...props} style={{backgroundColor: variant === 'primary' ? 'blue' : 'grey',
+    color: 'white'
+    }}>
      {children}
     </button>
   )
