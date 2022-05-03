@@ -4,7 +4,12 @@ import { Button, Props } from '../src/Button';
 
 const meta: Meta ={
   title: 'Button',
-  component: Button
+  component: Button,
+  argTypes: {
+    children: {
+      defaultValue: 'Default Text'
+    }
+  }
 }
 
 export default meta;
