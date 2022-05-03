@@ -9,6 +9,13 @@ const meta: Meta ={
 
 export default meta;
 
-export const Default = () => <Button variant='primary'>CLICK ME</Button>
+const Template: Story<Props> = (args) => <Button {...args}/>
 
-export const Secondary = () => <Button variant='secondary'>I am button</Button>
+export const Default = Template.bind({});
+
+export const Secondary = Template.bind({});
+
+Secondary.args = {
+  variant: 'secondary',
+  children: 'I am secondary'
+}
